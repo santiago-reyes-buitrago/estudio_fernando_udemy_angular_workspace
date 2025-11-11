@@ -1,0 +1,10 @@
+<h1 class="text-3xl font-bold underline">
+  Hello world!
+</h1>
+<lib-srb-side-menu
+  [isAuthenticated]="isAuthenticated()"
+  (onSignIn)="isAuthenticated.set(true)"
+  [titleColor]="TitleColor.yellow"
+  (onSignOut)="isAuthenticated.set(false)"
+/>
+<router-outlet />

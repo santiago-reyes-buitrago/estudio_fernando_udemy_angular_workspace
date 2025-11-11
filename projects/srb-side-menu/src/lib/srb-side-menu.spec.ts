@@ -1,23 +1,19 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { TestBed } from '@angular/core/testing';
 import { SrbSideMenu } from './srb-side-menu';
 
 describe('SrbSideMenu', () => {
-  let component: SrbSideMenu;
-  let fixture: ComponentFixture<SrbSideMenu>;
-
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SrbSideMenu]
+      imports: [SrbSideMenu],
+      providers: [],
     })
     .compileComponents();
-
-    fixture = TestBed.createComponent(SrbSideMenu);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
   });
 
   it('should create', () => {
+    const fixture = TestBed.createComponent(SrbSideMenu);
+    const component = fixture.componentInstance;
     expect(component).toBeTruthy();
   });
+
 });
