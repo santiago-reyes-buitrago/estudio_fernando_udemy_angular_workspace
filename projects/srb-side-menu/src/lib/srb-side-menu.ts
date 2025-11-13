@@ -20,6 +20,8 @@ export enum TitleColor {
   styles: ``,
 })
 export class SrbSideMenu {
+  title = input<string>('SRB');
+  subtitle = input<string>('Corp');
   isAuthenticated = input(false);
   titleColor = input<TitleColor>(TitleColor.yellow);
   onSignOut = output();
